@@ -1,6 +1,7 @@
-import LogoIcon from './icons/LogoIcon';
-import SearchIcon from './icons/SearchIcon';
-import NotificationIcon from './icons/NotificationIcon';
+import LogoIcon from "./icons/LogoIcon";
+import SearchIcon from "./icons/SearchIcon";
+import NotificationIcon from "./icons/NotificationIcon";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -14,27 +15,42 @@ const Header = () => {
               <LogoIcon width={25} height={29} color="#1f2937" />
               <span className="heading-lg text-gray-900">.fis</span>
             </div>
-            
+
             {/* Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#" className="text-body text-gray-700 hover:text-gray-900 transition-colors font-medium">
+              <Link
+                to="/"
+                className="text-body text-gray-700 hover:text-gray-900 transition-colors font-medium"
+              >
                 Home
-              </a>
-              <a href="cities" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
+              </Link>
+              <Link
+                to="/cities"
+                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
+              >
                 Explore cities
-              </a>
-              <a href="#" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
+              </Link>
+              <a
+                href="#"
+                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
+              >
                 Template
               </a>
-              <a href="#" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
+              <a
+                href="#"
+                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
+              >
                 Archive Page
               </a>
-              <a href="#" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
+              <a
+                href="#"
+                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
+              >
                 Other Page
               </a>
             </nav>
           </div>
-          
+
           {/* User Actions */}
           <div className="flex items-center gap-3">
             <button className="p-2 rounded-full border border-gray-600 hover:bg-gray-50 transition-colors">
@@ -43,9 +59,9 @@ const Header = () => {
             <button className="p-2 rounded-full border border-gray-600 hover:bg-gray-50 transition-colors">
               <NotificationIcon width={19} height={21} color="#4b5563" />
             </button>
-            <img 
-              src="/images/avatar.jpg" 
-              alt="User avatar" 
+            <img
+              src="/images/avatar.jpg"
+              alt="User avatar"
               className="w-8 h-8 rounded-full object-cover border-2 border-gray-200"
             />
           </div>
