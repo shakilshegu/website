@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { formatPrice } from "../data/citiesMockData";
 import type { CityDestination } from "../data/citiesMockData";
 import {
   Star,
@@ -97,7 +96,7 @@ const CityCard = ({ city }: CityCardProps) => {
             isHovered ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         >
-          <div className="h-full bg-white/95 backdrop-blur-md shadow-xl">
+          <div className="h-full bg-gradient-to-br from-blue-50 to-indigo-100 backdrop-blur-md shadow-xl">
             <div className="h-full p-6 flex flex-col justify-between">
               {/* Header */}
               <div className="text-center mt-10">
@@ -173,7 +172,7 @@ const CityCard = ({ city }: CityCardProps) => {
                   <h2 className="text-3xl font-bold mb-2">
                     {city.packageName}
                   </h2>
-                  <p className="text-blue-100 text-lg">
+                  <p className="text-white text-lg">
                     {city.destination} • {city.tagline}
                   </p>
                   <div className="flex items-center gap-4 mt-3">

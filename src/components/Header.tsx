@@ -20,8 +20,8 @@ const Header = () => {
               <a href="#" className="text-body text-gray-700 hover:text-gray-900 transition-colors font-medium">
                 Home
               </a>
-              <a href="#" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
-                Life style
+              <a href="cities" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
+                Explore cities
               </a>
               <a href="#" className="text-body text-gray-500 hover:text-gray-900 transition-colors">
                 Template
