@@ -1,27 +1,20 @@
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import HighlightsSection from './components/HighlightsSection';
-import BenefitsSection from './components/BenefitsSection';
-import HowItWorksSection from './components/HowItWorksSection';
-import AccommodationTypesSection from './components/AccommodationTypesSection';
-import VideoSection from './components/VideoSection';
-import Footer from './components/Footer';
+import { Routes, Route } from "react-router-dom";
 import './App.css'
+import Layout from "./Layout/Layout";
+import LandingPage from "./pages/LandingPage";
+import CitiesPage from "./pages/CitiesPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <HeroSection />
-        <HighlightsSection />
-        <BenefitsSection />
-        <HowItWorksSection />
-        <AccommodationTypesSection />
-        <VideoSection />
-      </main>
-      <Footer />
-    </div>
+   <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/cities" element={<CitiesPage />} />
+      </Route>
+
+      {/* Not Found route outside Layout (optional) */}
+      <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+    </Routes>
   );
 }
 
