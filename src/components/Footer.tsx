@@ -1,129 +1,107 @@
-import LogoIcon from './icons/LogoIcon';
-
-const footerLinks = {
-  useCases: [
-    "Abstergo Ltd.",
-    "Nursing Assistant", 
-    "Medical Assistant",
-    "Marketing Coordinator",
-    "Dog Trainer",
-    "Web Designer",
-    "President of Sales",
-    "Medical Assistant"
-  ],
-  categories: [
-    "Algeria",
-    "South Africa",
-    "Central African Republic", 
-    "Afghanistan",
-    "Viet Nam",
-    "Iran (Islamic Republic of)",
-    "Pakistan",
-    "Serbia"
-  ],
-  documentations: [
-    "Dog Trainer",
-    "Nursing Assistant",
-    "Marketing Coordinator",
-    "President of Sales", 
-    "Web Designer",
-    "Medical Assistant",
-    "Dog Trainer",
-    "President of Sales"
-  ],
-  conditions: [
-    "Ethical Hacker",
-    "UI/UX Designer",
-    "Software Tester",
-    "Scrum Master",
-    "Project Manager",
-    "Team Leader",
-    "Software Development",
-    "Software Developer"
-  ]
-};
-
-const socialLinks = [
-  { name: "Facebook", icon: "📘" },
-  { name: "Twitter", icon: "🐦" },
-  { name: "Instagram", icon: "📷" },
-  { name: "Youtube", icon: "📺" }
-];
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      {/* Separator Line */}
-      <div className="w-full h-px bg-gray-200" />
-      
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
-          {/* Brand and Social */}
-          <div className="space-y-4">
-            {/* Logo */}
-            <div className="flex items-center gap-2 mb-6">
-              <LogoIcon width={25} height={29} color="#1f2937" />
-              <span className="heading-lg text-gray-900">.fis</span>
+    <footer className="bg-white border-t border-gray-200 py-8">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="md:col-span-1">
+            <h2 className="text-2xl font-bold mb-4">Dreamzz Travels</h2>
+            <p className="text-black mb-4 leading-relaxed">
+              Creating unforgettable travel experiences across India's most beautiful destinations. 
+              Your journey begins with us.
+            </p>
+            <div className="flex space-x-4">
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
             </div>
-            
-            {/* Social Links */}
-            <div className="space-y-2">
-              {socialLinks.map((social, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <span className="text-xl">{social.icon}</span>
-                  <a href="#" className="text-small text-gray-700 hover:text-gray-900 transition-colors">
-                    {social.name}
-                  </a>
+          </div>
+          
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className=" hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Our Services</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Tour Packages</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Gallery</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Testimonials</a></li>
+            </ul>
+          </div>
+          
+          {/* Destinations */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Popular Destinations</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className=" hover:text-white transition-colors">Chikmagalur</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Munnar</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Goa</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Coorg</a></li>
+              <li><a href="#" className=" hover:text-white transition-colors">Ooty</a></li>
+            </ul>
+          </div>
+          
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                <div>
+                  <p className=" text-sm leading-relaxed">
+                    123 Travel Street<br />
+                    Bangalore, Karnataka 560001
+                  </p>
                 </div>
-              ))}
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-green-400 flex-shrink-0" />
+                <a href="tel:+916362040932" className=" hover:text-white transition-colors">
+                  +91 6362 040 932
+                </a>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <a href="mailto:info@dreamzztravel.com" className=" hover:text-white transition-colors">
+                  info@dreamzztravel.com
+                </a>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <Clock className="w-5 h-5 text-yellow-400 flex-shrink-0" />
+                <p className=" text-sm">
+                  Mon - Sat: 9:00 AM - 7:00 PM
+                </p>
+              </div>
             </div>
           </div>
-          
-          {/* Use Cases */}
-          <div className="space-y-4">
-            <h3 className="text-small font-bold text-gray-900">Use Cases</h3>
-            <div className="space-y-3">
-              {footerLinks.useCases.map((link, index) => (
-                <a key={index} href="#" className="block text-small text-gray-600 hover:text-gray-900 transition-colors">
-                  {link}
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          {/* Categories */}
-          <div className="space-y-4">
-            <h3 className="text-small font-bold text-gray-900">Categories</h3>
-            <div className="space-y-3">
-              {footerLinks.categories.map((link, index) => (
-                <a key={index} href="#" className="block text-small text-gray-600 hover:text-gray-900 transition-colors">
-                  {link}
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          {/* Documentations */}
-          <div className="space-y-4">
-            <h3 className="text-small font-bold text-gray-900">Documentations</h3>
-            <div className="space-y-3">
-              {footerLinks.documentations.map((link, index) => (
-                <a key={index} href="#" className="block text-small text-gray-600 hover:text-gray-900 transition-colors">
-                  {link}
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          {/* Our Condition */}
-          <div className="space-y-4">
-            <h3 className="text-small font-bold text-gray-900">Our Condition</h3>
-            <div className="space-y-3">
-              {footerLinks.conditions.map((link, index) => (
-                <a key={index} href="#" className="block text-small text-gray-600 hover:text-gray-900 transition-colors">
-                  {link}
-                </a>
-              ))}
+        </div>
+        
+        {/* Bottom Section */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
+              © 2024 Dreamzz Travels. All rights reserved.
+            </p>
+            <div className="flex space-x-6 text-sm">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">Refund Policy</a>
             </div>
           </div>
         </div>

@@ -12,8 +12,13 @@ const Header = () => {
           <div className="flex items-center gap-14">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <LogoIcon width={25} height={29} color="#1f2937" />
-              <span className="heading-lg text-gray-900">.fis</span>
+              <img
+                src="/images/accommodations/logo.jpg"
+                alt="Header Logo"
+                className="w-12 h-12 rounded-full object-cover"
+              />
+
+              <span className="heading-lg text-gray-900">Dreamzz Travels</span>
             </div>
 
             {/* Navigation */}
@@ -30,24 +35,12 @@ const Header = () => {
               >
                 Explore cities
               </Link>
-              <a
-                href="#"
+              <Link
+                to="/cities"
                 className="text-body text-gray-500 hover:text-gray-900 transition-colors"
               >
-                Template
-              </a>
-              <a
-                href="#"
-                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
-              >
-                Archive Page
-              </a>
-              <a
-                href="#"
-                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
-              >
-                Other Page
-              </a>
+                Contacts
+              </Link>
             </nav>
           </div>
 
@@ -59,11 +52,6 @@ const Header = () => {
             <button className="p-2 rounded-full border border-gray-600 hover:bg-gray-50 transition-colors">
               <NotificationIcon width={19} height={21} color="#4b5563" />
             </button>
-            <img
-              src="/images/avatar.jpg"
-              alt="User avatar"
-              className="w-8 h-8 rounded-full object-cover border-2 border-gray-200"
-            />
           </div>
         </div>
       </div>
