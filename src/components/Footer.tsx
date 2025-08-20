@@ -14,14 +14,14 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/people/Dreamzz-Travels/61561306974415/?ref=_xav_ig_profile_page_web" 
                 className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/dreamzz_travels/?igsh=MTZ6eWh6dms3MzR4bQ%3D%3D" 
                 className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors"
                 aria-label="Instagram"
               >

@@ -24,6 +24,34 @@ interface CityCardProps {
 const CityCard = ({ city }: CityCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const phoneNumber = "916362040932";
+
+  // Create the WhatsApp message
+  const message = encodeURIComponent(
+    `Hi Dreamzz Travels! 👋
+
+I'm interested in booking a trip to ${city?.destination || "your destination"}${
+      city?.discount
+        ? ` and would like to know more about the ${city.discount} discount offer`
+        : ""
+    }.
+
+Could you please provide me with:
+- Travel packages available
+- Pricing details
+- Best travel dates
+- Accommodation options
+
+Looking forward to planning my dream vacation with you!
+
+Thank you! ✈️`
+  );
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+  const handleBookingClick = () => {
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <>
@@ -110,7 +138,6 @@ const CityCard = ({ city }: CityCardProps) => {
                   <Users className="w-4 h-4" />
                   <span>{city.minimumMembers}+ people</span>
                 </div>
-             
               </div>
 
               {/* Key Highlights */}
@@ -136,8 +163,6 @@ const CityCard = ({ city }: CityCardProps) => {
                 </div>
               </div>
 
-             
-
               {/* CTA Buttons */}
               <div className="space-y-2">
                 <button
@@ -146,7 +171,6 @@ const CityCard = ({ city }: CityCardProps) => {
                 >
                   View Full Details
                 </button>
-              
               </div>
             </div>
           </div>
@@ -399,11 +423,11 @@ const CityCard = ({ city }: CityCardProps) => {
                 </section>
 
                 {/* Accommodation & Pricing */}
-                <section className="bg-blue-50 rounded-xl p-6">
+                <section className="bg-blue-50 rounded-xl p-6 ">
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">
                     Accommodation & Pricing
                   </h3>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className=" lg:grid-cols-2 gap-8 ">
                     <div>
                       <div className="bg-white rounded-lg p-6 shadow-sm">
                         <h4 className="text-xl font-bold text-gray-900 mb-3">
@@ -434,46 +458,6 @@ const CityCard = ({ city }: CityCardProps) => {
                           <div className="flex items-center gap-2 text-gray-700">
                             <CheckCircle className="w-4 h-4 text-green-500" />
                             <span>Free Wi-Fi & parking</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-white rounded-lg p-6 shadow-sm">
-                      <div className="text-center">
-                        <p className="text-lg text-gray-600 mb-2">
-                          Starting from
-                        </p>
-                        <div className="flex items-center justify-center gap-2 mb-3">
-                          <span className="text-4xl font-bold text-blue-600">
-                            {city.tariff}
-                          </span>
-                          {city.discount && (
-                            <span className="bg-red-500 text-white px-2 py-1 rounded text-sm font-bold">
-                              {city.discount}
-                            </span>
-                          )}
-                        </div>
-                        <p className="text-gray-500 mb-4">
-                          per person (all inclusive)
-                        </p>
-
-                        <div className="space-y-2 text-sm text-gray-600 text-left">
-                          <div className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
-                            <span>All meals included</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
-                            <span>Transportation & transfers</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
-                            <span>Entry fees & guide</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
-                            <span>Travel insurance</span>
                           </div>
                         </div>
                       </div>
@@ -542,7 +526,10 @@ const CityCard = ({ city }: CityCardProps) => {
                 >
                   Close Details
                 </button>
-                <button className="flex-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 px-8 rounded-lg font-medium transition-all transform hover:scale-105 shadow-lg">
+                <button
+                  onClick={handleBookingClick}
+                  className="flex-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 px-8 rounded-lg font-medium transition-all transform hover:scale-105 shadow-lg"
+                >
                   Book Now {city.discount && `• Save ${city.discount}`}
                 </button>
               </div>

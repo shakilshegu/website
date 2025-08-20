@@ -1,9 +1,11 @@
-import LogoIcon from "./icons/LogoIcon";
 import SearchIcon from "./icons/SearchIcon";
 import NotificationIcon from "./icons/NotificationIcon";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const activeClass = "text-gray-900 font-semibold"; // Active link style
+  const inactiveClass = "text-gray-500 hover:text-gray-900 transition-colors";
+
   return (
     <header className="w-full bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-4">
@@ -17,30 +19,35 @@ const Header = () => {
                 alt="Header Logo"
                 className="w-12 h-12 rounded-full object-cover"
               />
-
               <span className="heading-lg text-gray-900">Dreamzz Travels</span>
             </div>
 
             {/* Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <Link
+              <NavLink
                 to="/"
-                className="text-body text-gray-700 hover:text-gray-900 transition-colors font-medium"
+                className={({ isActive }) =>
+                  isActive ? activeClass : inactiveClass
+                }
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/places"
-                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
+                className={({ isActive }) =>
+                  isActive ? activeClass : inactiveClass
+                }
               >
-              Explore places
-              </Link>
-              <Link
+                Explore places
+              </NavLink>
+              <NavLink
                 to="/cities"
-                className="text-body text-gray-500 hover:text-gray-900 transition-colors"
+                className={({ isActive }) =>
+                  isActive ? activeClass : inactiveClass
+                }
               >
                 Contacts
-              </Link>
+              </NavLink>
             </nav>
           </div>
 

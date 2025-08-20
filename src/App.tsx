@@ -3,6 +3,7 @@ import './App.css'
 import Layout from "./Layout/Layout";
 import LandingPage from "./pages/LandingPage";
 import CitiesPage from "./pages/CitiesPage";
+import NotFoundPage from "./components/Notfound";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       </Route>
 
       {/* Not Found route outside Layout (optional) */}
-      <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+      <Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );
 }

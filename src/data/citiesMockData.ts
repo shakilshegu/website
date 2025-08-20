@@ -1,5 +1,5 @@
 export const mockCitiesData: CityDestination[] = [
-   {
+  {
     id: 1,
     packageName: "Coorg Tour",
     destination: "Coorg",
@@ -324,6 +324,17 @@ export const mockCitiesData: CityDestination[] = [
         ]
       }
     ],
+    termsAndConditions: [
+      "Bookings must be made at least 5-6 days in advance",
+      "Package is subject to availability and weather conditions",
+      "25% advance payment required to confirm, remaining at departure",
+      "Driver Duty Hours are 6:00 AM - 9:00 AM (Extra duty hours may be applicable for Bata)"
+    ],
+    contact: {
+      address: "Opp Hotel Taj, IG Road, Chikmagalur, Karnataka",
+      phone: "8304046814",
+      whatsapp: "8304046814"
+    },
     badge: "Hill Station Special",
     discount: "12% OFF"
   },
@@ -336,7 +347,6 @@ export const mockCitiesData: CityDestination[] = [
     tariff: "₹1,249",
     perHead: true,
     minimumMembers: 4,
-    stayName: "Hotel",
     pickupLocation: "Bengaluru",
     rating: 4.7,
     reviewCount: 38,
@@ -375,9 +385,830 @@ export const mockCitiesData: CityDestination[] = [
         ]
       }
     ],
+    contact: {
+      phone: "8304046814",
+      whatsapp: "8304046814",
+      instagram: "@dreamadventuresaj"
+    },
     badge: "Day Special",
     discount: "5% OFF"
-  }
+  },
+  {
+    id: 7,
+    packageName: "Ooty Tour",
+    destination: "Ooty",
+    tagline: "Your Gateway to Enchanting Ooty Experiences",
+    duration: "3 Days & 2 Nights",
+    tariff: "₹5,499",
+    perHead: true,
+    minimumMembers: 4,
+    stayName: "Mejastic Crown / Drizzle Drop Inn",
+    pickupLocation: "Bengaluru / Mysore",
+    rating: 4.82,
+    reviewCount: 54,
+    image: "https://images.unsplash.com/photo-1589136777351-fdc9c9cab193?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    highlights: [
+      "Botanical Gardens",
+      "Ooty Lake",
+      "Rose Garden",
+      "Thread Garden",
+      "Toy Train Ride to Coonoor",
+      "Dolphin’s Nose",
+      "Tea Factory & Museum",
+      "Doddabetta Peak",
+      "Pykara Waterfalls & Lake"
+    ],
+    inclusions: [
+      "Stay at Drizzle Drop Inn",
+      "Private car with driver",
+      "Breakfast",
+      "All sightseeing as per itinerary"
+    ],
+    exclusions: [
+      "Entry fees to attractions",
+      "Meals not mentioned",
+      "Personal expenses",
+      "Any cost for additional activities",
+      "Anything not mentioned in inclusions"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Local Sightseeing & Botanical Delights",
+        activities: [
+          "Pickup from Bengaluru or Mysore and drive to Ooty",
+          "Check-in at Drizzle Drop Inn, freshen up",
+          "Botanical Gardens – Rare plants and flowers",
+          "Ooty Lake – Boating",
+          "Rose Garden – Variety of vibrant roses",
+          "Thread Garden – Handmade plants and flowers",
+          "St. Stephen's Church – One of the oldest churches in Nilgiris",
+          "Return to stay for dinner and rest"
+        ]
+      },
+      {
+        day: 2,
+        title: "Coonoor Excursion & Tea Culture",
+        activities: [
+          "Breakfast at stay",
+          "Toy Train Ride to Coonoor – Nilgiri Mountain Railway",
+          "Sim’s Park – Unique plant species",
+          "Dolphin’s Nose – Valley and tea garden views",
+          "Tea Factory & Tea Museum – Learn and taste",
+          "Lamb’s Rock – Scenic hill views",
+          "Return to stay for night"
+        ]
+      },
+      {
+        day: 3,
+        title: "Scenic Peaks & Departure",
+        activities: [
+          "Breakfast at Drizzle Drop Inn",
+          "Doddabetta Peak – Highest point in Nilgiris",
+          "Wax World Museum – Lifelike wax statues",
+          "Pykara Waterfalls – Scenic cascades",
+          "Pykara Lake – Boating",
+          "Local Markets – Souvenir shopping",
+          "Check-out and return to Bengaluru / Mysore"
+        ]
+      }
+    ],
+    badge: "Hill Station Special",
+    discount: "10% OFF"
+  },
+  {
+    id: 8,
+    packageName: "Chikmagalur Tour",
+    destination: "Chikmagalur",
+    tagline: "Discover the Beauty of Chikmagalur with Us",
+    duration: "3 Days & 2 Nights",
+    tariff: "₹5,499",
+    perHead: true,
+    minimumMembers: 4,
+    stayName: "Jaguar Comforts",
+    pickupLocation: "Bengaluru / Mysore",
+    rating: 4.85,
+    reviewCount: 61,
+    image: "https://images.unsplash.com/photo-1622725859789-8e9ccf920693?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    highlights: [
+      "Mullayanagiri Peak",
+      "Baba Budangiri",
+      "Jhari Falls",
+      "Hebbe Waterfalls",
+      "Kemmangundi",
+      "Yagachi Water Sports",
+      "Belur & Halebidu Temples"
+    ],
+    inclusions: [
+      "Stay at Jaguar Comforts",
+      "Private car with driver",
+      "Breakfast",
+      "All sightseeing as per itinerary",
+      "Mullayanagiri entry fee",
+      "Belur and Halebidu temples entry fee"
+    ],
+    exclusions: [
+      "Entry fees to attractions not mentioned",
+      "Meals not mentioned",
+      "Personal expenses"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Mountain Peaks & Waterfalls Adventure",
+        activities: [
+          "Pickup from Bengaluru or Mysore and travel to Chikmagalur",
+          "Check-in at Jaguar Comforts",
+          "Mullayanagiri – Trek to the highest peak in Karnataka",
+          "Baba Budangiri – Sacred hill with shrine and views",
+          "Jhari Falls – Hidden waterfall in the forest",
+          "Honnamanahalla Falls – Serene nature spot",
+          "Siri Café – Local coffee and scenic vibes",
+          "Return to stay for night"
+        ]
+      },
+      {
+        day: 2,
+        title: "Waterfalls & Temple Exploration",
+        activities: [
+          "Breakfast at stay",
+          "Hebbe Waterfalls – Scenic trek",
+          "Kalhattigiri Falls – Green surroundings",
+          "Kemmangundi – Hill station with gardens and views",
+          "Deviramma Temple – Tranquil hill temple",
+          "Return to stay for night"
+        ]
+      },
+      {
+        day: 3,
+        title: "Temples & Water Sports",
+        activities: [
+          "Breakfast at stay",
+          "Yagachi Water Sports – Adventure at Yagachi Dam",
+          "Belur Temples – Hoysala architecture",
+          "Halebidu Historical Temples – Ancient wonders",
+          "Check-out and return to Mysore"
+        ]
+      }
+    ],
+    badge: "Hill Adventure Special",
+    discount: "10% OFF"
+  },
+  {
+    id: 9,
+    packageName: "Coorg Tour (Couple Package)",
+    destination: "Coorg",
+    tagline: "Your gateway to unforgettable experiences in Coorg",
+    duration: "3 Days & 2 Nights",
+    tariff: "₹8,499",
+    perHead: true,
+    minimumMembers: 2,
+    stayName: "Golden Residency",
+    pickupLocation: "Bengaluru / Mysore",
+    rating: 4.87,
+    reviewCount: 54,
+    image: "https://images.unsplash.com/photo-1661492359562-419ba0ebaece?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    highlights: [
+      "Raja’s Seat",
+      "Madikeri Fort & Museum",
+      "Abbey Falls",
+      "Dubare Elephant Camp",
+      "Namdroling Monastery",
+      "Talacauvery",
+      "Mandalpatti"
+    ],
+    inclusions: [
+      "Stay at Golden Residency",
+      "Private car with driver",
+      "Breakfast",
+      "All sightseeing as per itinerary"
+    ],
+    exclusions: [
+      "Entry fees to attractions",
+      "Meals not mentioned",
+      "Personal expenses",
+      "Any jeep cost for any places",
+      "Anything not mentioned in inclusions"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Cultural Heritage & Nature Retreat",
+        activities: [
+          "Pickup from Bengaluru or Mysore and travel to Coorg",
+          "Check-in at stay and freshen up",
+          "Raja’s Seat – Peaceful garden with valley views",
+          "Madikeri Fort & Museum – History and culture",
+          "Madikeri Tomb – Serene historical site",
+          "Abbey Falls – Cascading beauty",
+          "Return to stay for night"
+        ]
+      },
+      {
+        day: 2,
+        title: "Adventure & Spiritual Bliss",
+        activities: [
+          "Breakfast at Golden Residency",
+          "Dubare Elephant Camp – Bathing and feeding elephants",
+          "Nisargadhama – Bamboo groves and deer park",
+          "Chiklihole Reservoir – Peaceful hidden spot",
+          "Namdroling Monastery – Grand Tibetan monastery",
+          "Coffee Plantation Tour – Learn about coffee culture",
+          "Return to stay for night"
+        ]
+      },
+      {
+        day: 3,
+        title: "Sacred Origins & Scenic Views",
+        activities: [
+          "Breakfast at stay",
+          "Talacauvery – Origin of River Cauvery",
+          "Bhagamandala – Confluence of three rivers",
+          "Mandalpatti – Hilltop views",
+          "Check-out and return to Bengaluru or Mysore"
+        ]
+      }
+    ],
+    badge: "Couples Special",
+    discount: "10% OFF"
+  },
+  {
+    id: 10,
+    packageName: "Wayanad Tour",
+    destination: "Wayanad",
+    tagline: "Embark on an unforgettable adventure with Dream Adventures",
+    duration: "3 Days & 2 Nights",
+    tariff: "₹5,999",
+    perHead: true,
+    minimumMembers: 4,
+    stayName: "Standard Stay (2 Nights)",
+    pickupLocation: "Bengaluru / Mysore",
+    rating: 4.84,
+    reviewCount: 41,
+    image: "https://images.unsplash.com/photo-1623302485960-d61687113a11?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    highlights: [
+      "Edakkal Caves",
+      "Kuruva Island",
+      "Chembra Peak",
+      "Banasura Sagar Dam",
+      "Pookode Lake",
+      "Meenmutty Waterfalls",
+      "Tholpetty Wildlife Sanctuary",
+      "Bamboo Forests",
+      "Wayanad Wildlife Sanctuary"
+    ],
+    inclusions: [
+      "Pickup & drop from location",
+      "Private car with driver",
+      "Fuel allowance",
+      "Toll & state border charges",
+      "2 Nights stay",
+      "Breakfast",
+      "Parking charges"
+    ],
+    exclusions: [
+      "Anything not mentioned in inclusions",
+      "Entry fees to attractions",
+      "Personal purchases",
+      "Changes in itinerary",
+      "Lunch & dinner"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Journey to Wayanad & Adventure Begins",
+        activities: [
+          "Pickup from selected location and travel to Wayanad",
+          "Explore Edakkal Caves with ancient petroglyphs",
+          "Visit Kuruva Island for serene surroundings",
+          "Chembra Peak – Highest point in Wayanad",
+          "Banasura Sagar Dam – Stunning views of the dam"
+        ]
+      },
+      {
+        day: 2,
+        title: "Scenic Spots & Wildlife",
+        activities: [
+          "Pookode Lake – Tranquil relaxation",
+          "Neelimala View Point – Breathtaking valley views",
+          "Meenmutty Waterfalls – Majestic cascades",
+          "Tholpetty Wildlife Sanctuary – Explore rich fauna"
+        ]
+      },
+      {
+        day: 3,
+        title: "Nature and Wildlife",
+        activities: [
+          "Bamboo Forests – Peaceful nature walk",
+          "Wayanad Wildlife Sanctuary – Spot diverse animals",
+          "Return journey to drop-off location"
+        ]
+      }
+    ],
+    termsAndConditions: [
+      "Bookings must be made at least 5-6 days in advance",
+      "Package subject to availability and weather conditions",
+      "25% advance payment required to confirm, remaining at departure"
+    ],
+    contact: {
+      address: "Mallandur Road, Uppalli, Chikmagalur, Karnataka",
+      phone: "8304046814",
+      whatsapp: "8304046814",
+      instagram: "@dreamadventuresaj"
+    },
+    badge: "Nature & Wildlife Special",
+    discount: "10% OFF"
+  },
+  {
+    id: 11,
+    packageName: "Chikmagalur Group Tour",
+    destination: "Chikmagalur",
+    tagline: "Explore the beauty of Chikmagalur with Dream Adventures",
+    duration: "2 Days & 1 Night",
+    tariff: "₹3,999",
+    perHead: true,
+    minimumMembers: 0,
+    stayName: "Areca Ranches",
+    pickupLocation: "Bengaluru Majestic (6 AM)",
+    rating: 4.82,
+    reviewCount: 28,
+    image: "https://images.unsplash.com/photo-1573674401446-87cae8d4d28e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    highlights: [
+      "Belur Historical Temples",
+      "Halebidu Historical Temples",
+      "Yagachi Water Sports",
+      "Mullayanagiri Peak",
+      "Baba Budangiri",
+      "Jhari Falls Jeep Ride",
+      "Honnamanahalla Falls",
+      "Siri Cafe",
+      "Campfire with music"
+    ],
+    inclusions: [
+      "Comfortable stay in Chikmagalur",
+      "Transportation with pickup and drop-off",
+      "Breakfast (Day 2)",
+      "All sightseeing as per itinerary",
+      "Campfire with music on the first night",
+      "Experienced guide",
+      "Entry ticket for Mullayanagiri",
+      "Parking charges at Belur and Halebidu",
+      "Jeep ride at Jhari Falls",
+      "Dinner (Day 1)"
+    ],
+    exclusions: [
+      "Personal expenses",
+      "Lunch not included",
+      "Any item not listed in inclusions"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Adventure and Historical Exploration",
+        activities: [
+          "Pickup from Bengaluru Majestic at 6 AM",
+          "Scenic drive to Chikmagalur",
+          "Visit Belur Historical Temples – Hoysala architecture",
+          "Explore Halebidu Historical Temples – intricate carvings",
+          "Enjoy Yagachi Water Sports – boating, jet skiing",
+          "Check in to accommodation",
+          "Campfire with music under the stars"
+        ]
+      },
+      {
+        day: 2,
+        title: "Scenic Peaks and Nature Retreat",
+        activities: [
+          "Breakfast at hotel",
+          "Visit Mullayanagiri – Karnataka’s highest peak",
+          "Explore Baba Budangiri – caves & landscapes",
+          "Jhari Falls – jeep ride to scenic waterfall",
+          "Honnamanahalla Falls – peaceful spot",
+          "Relax at Siri Cafe before departure",
+          "Return to Bengaluru Majestic"
+        ]
+      }
+    ],
+    termsAndConditions: [
+      "50% advance payment and remaining balance at pickup",
+      "Package operates every weekend",
+      "Minimum group size may apply",
+      "Dreamzz Travels is not responsible for personal loss or injury"
+    ],
+    contact: {
+      phone: "6304046814",
+      whatsapp: "6304046814",
+      instagram: "@dreamadventuresaj"
+    },
+    badge: "Weekend Group Special",
+    discount: "15% OFF"
+  },
+  {
+    id: 12,
+    packageName: "Wayanad Tour",
+    destination: "Wayanad",
+    tagline: "Embark on an unforgettable adventure with Dream Adventures",
+    duration: "3 Days & 2 Nights",
+    tariff: "₹5,999",
+    perHead: true,
+    minimumMembers: 4,
+    stayName: "Standard Stay (2 nights)",
+    pickupLocation: "Bengaluru/Mysore",
+    rating: 4.76,
+    reviewCount: 25,
+    image: "https://images.unsplash.com/photo-1572408992122-a530c9a09dbb?q=80&w=839&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    highlights: [
+      "Edakkal Caves",
+      "Kuruva Island",
+      "Chembra Peak",
+      "Banasura Sagar Dam",
+      "Pookode Lake",
+      "Neelimala View Point",
+      "Meenmutty Waterfalls",
+      "Tholpetty Wildlife Sanctuary",
+      "Bamboo Forests",
+      "Wayanad Wildlife Sanctuary"
+    ],
+    inclusions: [
+      "Pickup & drop from location",
+      "Car with driver",
+      "Fuel allowance",
+      "Toll & state border charges",
+      "2 Nights stay",
+      "Breakfast",
+      "Parking charges"
+    ],
+    exclusions: [
+      "Anything not mentioned in inclusions",
+      "Monuments or entry fees at places",
+      "Personal purchases",
+      "Any change in itinerary",
+      "Lunch & dinner"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Journey to Wayanad & Adventure Begins",
+        activities: [
+          "Pickup from selected location and travel to Wayanad",
+          "Explore Edakkal Caves – ancient petroglyphs",
+          "Visit Kuruva Island – serene surroundings",
+          "Trek to Chembra Peak – highest peak in Wayanad",
+          "Marvel at Banasura Sagar Dam and surroundings"
+        ]
+      },
+      {
+        day: 2,
+        title: "Scenic Spots & Wildlife",
+        activities: [
+          "Relax at Pookode Lake",
+          "Enjoy Neelimala View Point – breathtaking views",
+          "Experience Meenmutty Waterfalls",
+          "Explore Tholpetty Wildlife Sanctuary"
+        ]
+      },
+      {
+        day: 3,
+        title: "Nature and Wildlife",
+        activities: [
+          "Walk through Bamboo Forests",
+          "Spot wildlife at Wayanad Wildlife Sanctuary",
+          "Return to drop-off location"
+        ]
+      }
+    ],
+    termsAndConditions: [
+      "Bookings must be made at least 5-6 days in advance",
+      "Package subject to availability and weather conditions",
+      "25% advance payment required to confirm, remaining at departure"
+    ],
+    contact: {
+      address: "Mallandur Road, Uppalli, Chikmagalur, Karnataka",
+      phone: "8304046814",
+      whatsapp: "8304046814"
+    },
+    badge: "Nature & Wildlife Special",
+    discount: "10% OFF"
+  },
+  {
+  id: 13,
+  packageName: "Chikmagalur Group Tour",
+  destination: "Chikmagalur",
+  tagline: "Explore the beauty of Chikmagalur with Dream Adventures",
+  duration: "2 Days & 1 Night",
+  tariff: "₹3,999",
+  perHead: true,
+  minimumMembers: 0,
+  stayName: "Areca Ranches",
+  pickupLocation: "Bengaluru Majestic (6 AM)",
+  rating: 4.82,
+  reviewCount: 18,
+  image: "https://images.unsplash.com/photo-1622725859789-8e9ccf920693?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  highlights: [
+    "Belur Historical Temples",
+    "Halebidu Historical Temples",
+    "Yagachi Water Sports",
+    "Mullayanagiri Peak",
+    "Baba Budangiri",
+    "Jhari Falls",
+    "Honnamanahalla Falls",
+    "Siri Cafe",
+    "Campfire with music"
+  ],
+  inclusions: [
+    "Comfortable stay in Chikmagalur",
+    "Transportation with pickup and drop-off",
+    "Breakfast (day-2)",
+    "All sightseeing as per itinerary",
+    "Campfire with music on the first night",
+    "Experienced guide for the trip",
+    "Entry ticket for Mullayanagiri",
+    "Parking charges at Belur and Halebidu",
+    "Jeep ride at Jhari Falls",
+    "Dinner (day-1)"
+  ],
+  exclusions: [
+    "Personal expenses",
+    "Lunch not included",
+    "Any item not listed in inclusions"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Adventure and Historical Exploration",
+      activities: [
+        "Pickup from Bengaluru Majestic at 6 AM",
+        "Scenic drive to Chikmagalur",
+        "Visit Belur Historical Temples – Hoysala architecture",
+        "Explore Halebidu Historical Temples – intricate carvings",
+        "Enjoy Yagachi Water Sports – boating and jet skiing",
+        "Check-in at accommodation and enjoy campfire with music"
+      ]
+    },
+    {
+      day: 2,
+      title: "Scenic Peaks and Nature Retreat",
+      activities: [
+        "Breakfast at the hotel",
+        "Visit Mullayanagiri – Karnataka’s highest peak",
+        "Explore Baba Budangiri – mountain range and caves",
+        "Enjoy Jhari Falls – jeep ride included",
+        "Relax at Honnamanahalla Falls",
+        "Visit Siri Cafe – scenic views",
+        "Departure to Bengaluru Majestic"
+      ]
+    }
+  ],
+  termsAndConditions: [
+    "50% advance payment and remaining balance at pickup",
+    "Package operates every weekend",
+    "Minimum group size may apply",
+    "Dreamzz Travels not responsible for personal loss or injury"
+  ],
+  contact: {
+    phone: "6304046814",
+    whatsapp: "6304046814",
+    instagram: "@dreamadventuresaj"
+  },
+  badge: "Weekend Special",
+  discount: "5% OFF"
+},
+{
+  id: 14,
+  packageName: "Chikmagalur Group Tour (Couple Package)",
+  destination: "Chikmagalur",
+  tagline: "Discover Chikmagalur’s beauty with Dream Adventures – Weekend Special",
+  duration: "2 Days & 1 Night",
+  tariff: "₹3,999/-",
+  perHead: true,
+  minimumMembers: 0,
+  stayName: "Areca Ranches",
+  pickupLocation: "Bengaluru Majestic (6 AM)",
+  rating: 4.82,
+  reviewCount: 18,
+  image: "https://images.unsplash.com/photo-1680092338119-444efe802f1e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  highlights: [
+    "Belur Historical Temples – Hoysala architecture",
+    "Halebidu Historical Temples – intricate carvings",
+    "Yagachi Water Sports – boating and jet skiing",
+    "Mullayanagiri Peak – Karnataka’s highest point",
+    "Baba Budangiri – mountain range and caves",
+    "Jhari Falls – jeep ride included",
+    "Honnamanahalla Falls – serene waters",
+    "Siri Cafe – scenic coffee spot",
+    "Campfire with music"
+  ],
+  inclusions: [
+    "Comfortable stay in Chikmagalur",
+    "Transportation with pickup and drop-off",
+    "Breakfast (day-2)",
+    "All sightseeing as per itinerary",
+    "Campfire with music on the first night",
+    "Experienced guide for the trip",
+    "Entry ticket for Mullayanagiri",
+    "Parking charges at Belur and Halebidu",
+    "Jeep ride at Jhari Falls",
+    "Dinner (day-1)"
+  ],
+  exclusions: [
+    "Personal expenses",
+    "Lunch not included",
+    "Any item not listed in inclusions"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Adventure & Historical Exploration",
+      activities: [
+        "Pickup from Bengaluru Majestic at 6 AM",
+        "Scenic drive to Chikmagalur",
+        "Belur Historical Temples – Hoysala architecture",
+        "Halebidu Historical Temples – intricate carvings",
+        "Yagachi Water Sports – boating and jet skiing",
+        "Check-in at Areca Ranches",
+        "Campfire with music"
+      ]
+    },
+    {
+      day: 2,
+      title: "Scenic Peaks & Nature Retreat",
+      activities: [
+        "Breakfast at the stay",
+        "Mullayanagiri Peak – Karnataka’s highest point",
+        "Baba Budangiri – mountain range and caves",
+        "Jhari Falls – jeep ride included",
+        "Honnamanahalla Falls – relax by the waters",
+        "Siri Cafe – scenic coffee spot",
+        "Departure to Bengaluru Majestic"
+      ]
+    }
+  ],
+  termsAndConditions: [
+    "50% advance payment and remaining balance at pickup",
+    "Package operates every weekend",
+    "Minimum group size may apply",
+    "Dream Adventures not responsible for personal loss or injury"
+  ],
+  contact: {
+    phone: "6304046814",
+    whatsapp: "6304046814",
+    instagram: "@dreamadventuresaj"
+  },
+  badge: "Weekend Special",
+  discount: "5% OFF"
+},
+{
+  id: 15,
+  packageName: "Munnar Tour",
+  destination: "Munnar",
+  tagline: "Experience the Best of Munnar with Dream Adventures with cold weather",
+  duration: "3 Days & 2 Nights",
+  tariff: "₹6,499",
+  perHead: true,
+  minimumMembers: 4,
+  stayName: "Hotel (2 Nights Stay)",
+  pickupLocation: "Bengaluru/Mysore (Customisable)",
+  rating: 4,
+  reviewCount: 33,
+  image: "https://images.unsplash.com/photo-1629813538702-64c925934e19?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  highlights: [
+    "Cheeyappara & Valara Waterfalls",
+    "Tea Plantations Viewpoint",
+    "Pothamedu Viewpoint",
+    "Eravikulam National Park",
+    "Tea Museum",
+    "Mattupetty Dam & Lake",
+    "Elephant Park",
+    "Echo Point",
+    "Top Station",
+    "Kundala Lake",
+    "Blossom Park"
+  ],
+  inclusions: [
+    "Pickup & drop from location",
+    "Car with driver",
+    "Fuel allowance",
+    "Toll & state border charges",
+    "2 Nights stay",
+    "Breakfast",
+    "Parking charges"
+  ],
+  exclusions: [
+    "Anything not mentioned in inclusions",
+    "Entry fees at places",
+    "Personal expenses",
+    "Any change in itinerary",
+    "Lunch & dinner"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival & Natural Wonders",
+      activities: [
+        "Pickup from selected location and travel to Munnar",
+        "Cheeyappara & Valara Waterfalls – cascading beauty on the way",
+        "Tea Plantations Viewpoint – lush tea gardens",
+        "Pothamedu Viewpoint – breathtaking valley views",
+        "Check-in at Hotel and relax"
+      ]
+    },
+    {
+      day: 2,
+      title: "Iconic Munnar Sightseeing",
+      activities: [
+        "Eravikulam National Park – home of the endangered Nilgiri Tahr",
+        "Tea Museum – learn about tea processing & history",
+        "Mattupetty Dam & Lake – scenic views and boating",
+        "Elephant Park – close encounter with elephants",
+        "Echo Point – natural echo phenomenon"
+      ]
+    },
+    {
+      day: 3,
+      title: "Adventure & Departure",
+      activities: [
+        "Top Station – highest point in Munnar with stunning views",
+        "Kundala Lake – peaceful boating experience",
+        "Blossom Park – nature walk",
+        "Return journey to drop-off location"
+      ]
+    }
+  ],
+  termsAndConditions: [
+    "Bookings must be made at least 5-6 days in advance",
+    "Package subject to availability and weather conditions",
+    "25% advance payment required to confirm, remaining at departure",
+    "Driver duty hours: 6:00 AM - 9:00 AM (extra duty hours may apply for Bata)"
+  ],
+  contact: {
+    phone: "8304046814",
+    whatsapp: "8304046814",
+    address: "Opp Hotel Taj IG road Chikmagalur, Karnataka"
+  },
+  badge: "Budget Friendly",
+  discount: "5% OFF"
+},
+{
+  id: 16,
+  packageName: "Mysore Day Tour",
+  destination: "Mysore",
+  tagline: "Experience the royal charm of Mysore in a day with Dream Adventures",
+  duration: "1 Day",
+  tariff: "₹1,249",
+  perHead: true,
+  minimumMembers: 4,
+  pickupLocation: "Bengaluru",
+  rating: 5,
+  reviewCount: 28,
+  image: "https://images.unsplash.com/photo-1638790133084-bd47e9eb0dec?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  highlights: [
+    "Mysore Palace",
+    "Jaganmohan Palace Art Gallery",
+    "St. Philomena’s Church",
+    "Mysore Zoo",
+    "Chamundi Hill & Chamundeshwari Temple",
+    "Brindavan Gardens Musical Fountain"
+  ],
+  inclusions: [
+    "Private car with driver",
+    "All sightseeing as per itinerary"
+  ],
+  exclusions: [
+    "Entry fees to attractions",
+    "Meals not mentioned",
+    "Personal expenses",
+    "Anything not mentioned in inclusions"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Royal Splendor & Cultural Marvels",
+      activities: [
+        "Early morning pickup from Bengaluru and drive to Mysore",
+        "Mysore Palace – explore grandeur and architecture",
+        "Jaganmohan Palace Art Gallery – paintings & artifacts",
+        "St. Philomena’s Church – neo-Gothic style",
+        "Mysore Zoo – one of the oldest in India",
+        "Chamundi Hill & Chamundeshwari Temple – panoramic views",
+        "Brindavan Gardens – evening musical fountain show",
+        "Return to Bengaluru"
+      ]
+    }
+  ],
+  termsAndConditions: [
+    "Minimum 4 members required",
+    "Package subject to availability and weather conditions",
+    "Full payment before departure",
+    "Driver duty hours: 6:00 AM - 9:00 PM (extra duty hours may apply for Bata)"
+  ],
+  contact: {
+    phone: "8304046814",
+    whatsapp: "8304046814",
+    instagram: "@dreamadventuresaj"
+  },
+  badge: "Day Trip",
+  discount: "20% OFF"
+}
 ] as const;
 
 // Type definitions for cities and travel packages
@@ -390,7 +1221,7 @@ export interface CityDestination {
   tariff: string;            // "₹5,499" (kept as string because of ₹ symbol)
   perHead: boolean;
   minimumMembers: number;
-  stayName: string;
+  stayName?: string;
   pickupLocation: string;
   rating: number;
   reviewCount: number;
@@ -398,13 +1229,15 @@ export interface CityDestination {
   highlights: string[];
   inclusions: string[];
   exclusions: string[];
+  termsAndConditions?:string[],
   itinerary: {
     day: number;
     title: string;
     activities: string[];
   }[];
   badge?: string;            // optional because not all packages may have this
-  discount?: string;         // optional as well
+  discount?: string;   
+  contact?:object;      // optional as well
 }
 
 
