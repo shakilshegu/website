@@ -1,20 +1,20 @@
 const benefits = [
   {
-    category: "Advertising",
-    title: "Cost-effective advertising",
-    description: "With a free listing, you can advertise your rental with no upfront costs",
+    category: "Personalized Service",
+    title: "Tailored travel experiences",
+    description: "Every journey is crafted specifically for you with no hidden fees or upfront consultation costs",
     color: "text-green-800"
   },
   {
-    category: "Exposure",
-    title: "Reach millions with Chisfis", 
-    description: "Millions of people are searching for unique places to stay around the world",
+    category: "Global Network",
+    title: "Access exclusive destinations worldwide", 
+    description: "Tap into our network of luxury hotels, premium experiences, and hidden gems across the globe",
     color: "text-blue-600"
   },
   {
-    category: "Secure",
-    title: "Secure and simple",
-    description: "A Holiday Lettings listing gives you a secure and easy way to take bookings and payments online",
+    category: "Peace of Mind",
+    title: "Secure and seamless booking",
+    description: "24/7 support, comprehensive travel insurance, and secure payment processing for worry-free adventures",
     color: "text-pink-800"
   }
 ];

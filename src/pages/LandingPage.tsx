@@ -1,4 +1,4 @@
-import AccommodationTypesSection from "../components/AccommodationTypesSection";
+// import AccommodationTypesSection from "../components/AccommodationTypesSection";
 import BenefitsSection from "../components/BenefitsSection";
 import HeroSection from "../components/HeroSection";
 import HighlightsSection from "../components/HighlightsSection";
@@ -13,7 +13,7 @@ const LandingPage = () => {
         <HighlightsSection />
         <BenefitsSection />
         <HowItWorksSection />
-        <AccommodationTypesSection />
+        {/* <AccommodationTypesSection /> */}
         <VideoSection />
       </main>
     </div>

@@ -5,18 +5,18 @@ import SaveMoreIcon from './icons/SaveMoreIcon';
 const steps = [
   {
     icon: BookRelaxIcon,
-    title: "Book & relax",
-    description: "Let each trip be an inspirational journey, each room a peaceful space"
+    title: "Dream & Discover",
+    description: "Share your travel dreams with our expert consultants who craft personalized itineraries tailored to your desires"
   },
   {
     icon: ChecklistIcon,
-    title: "Smart checklist",
-    description: "Let each trip be an inspirational journey, each room a peaceful space"
+    title: "Plan & Prepare", 
+    description: "We handle every detail from luxury accommodations to exclusive experiences, ensuring nothing is left to chance"
   },
   {
     icon: SaveMoreIcon,
-    title: "Save more",
-    description: "Let each trip be an inspirational journey, each room a peaceful space"
+    title: "Travel & Create Memories",
+    description: "Embark on your perfectly orchestrated journey with 24/7 support and exclusive VIP access worldwide"
   }
 ];
 
@@ -26,9 +26,9 @@ const HowItWorksSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="heading-xl text-gray-900">How it work</h2>
+          <h2 className="heading-xl text-gray-900">How Dreamzz Works</h2>
           <p className="text-body text-gray-500 max-w-2xl mx-auto">
-            Những địa điểm thường đến mà Luxstay
+             Your journey from dream to reality in three simple steps with our luxury travel experts
           </p>
         </div>
         
@@ -53,8 +53,6 @@ const HowItWorksSection = () => {
             </div>
           ))}
           
-          {/* Connecting Lines */}
-          <div className="absolute top-28 left-1/4 right-1/4 h-px border-t border-dashed border-gray-300 hidden md:block" />
         </div>
       </div>
     </section>

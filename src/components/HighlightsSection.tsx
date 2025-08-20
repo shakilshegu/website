@@ -2,29 +2,24 @@ import NextArrowIcon from './icons/NextArrowIcon';
 
 const destinations = [
   {
-    name: "New York",
-    properties: "188,288 properties",
-    image: "/images/destinations/new-york.png"
+    name: "Coorg",
+    image: "https://images.unsplash.com/photo-1529057299613-a565b7ce93aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    name: "Singapore", 
-    properties: "188,288 properties",
-    image: "/images/destinations/singapore.png"
+    name: "Munnar", 
+    image: "https://images.unsplash.com/photo-1616388969587-8196f32388b4?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    name: "Paris",
-    properties: "188,288 properties", 
-    image: "/images/destinations/paris.png"
+    name: "Goa", 
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
-    name: "London",
-    properties: "188,288 properties",
-    image: "/images/destinations/london.png"
+    name: "Chikmagalur",
+    image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
-    name: "Tokyo",
-    properties: "188,288 properties",
-    image: "/images/destinations/tokyo.png"
+    name: "Mysore",
+    image: "https://images.unsplash.com/photo-1579429223126-29d2f6f9c1ac?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
@@ -56,7 +51,6 @@ const HighlightsSection = () => {
                   </div>
                   <div className="space-y-2">
                     <h3 className="heading-sm text-gray-900">{destination.name}</h3>
-                    <p className="text-small text-gray-500">{destination.properties}</p>
                   </div>
                 </div>
               </div>

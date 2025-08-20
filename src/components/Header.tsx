@@ -30,10 +30,10 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                to="/cities"
+                to="/places"
                 className="text-body text-gray-500 hover:text-gray-900 transition-colors"
               >
-                Explore cities
+              Explore places
               </Link>
               <Link
                 to="/cities"

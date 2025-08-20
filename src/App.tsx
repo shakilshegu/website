@@ -9,7 +9,7 @@ function App() {
    <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/cities" element={<CitiesPage />} />
+        <Route path="/places" element={<CitiesPage />} />
       </Route>
 
       {/* Not Found route outside Layout (optional) */}

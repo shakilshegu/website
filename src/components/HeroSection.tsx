@@ -7,10 +7,10 @@ const HeroSection = () => {
           <div className="flex-1 space-y-8">
             <div className="space-y-6">
               <h1 className="heading-xl text-gray-900 max-w-lg">
-                Hotel, car & experiences
+               Where Every Journey Becomes a Dream Come True
               </h1>
               <p className="text-body text-gray-600 max-w-md">
-                Discover amazing places and experiences around the world with our curated collection of hotels, cars, and unique adventures.
+               Discover the world's most extraordinary destinations through our curated collection of luxury hotels, premium cars, and once-in-a-lifetime experiences.
               </p>
             </div>
             

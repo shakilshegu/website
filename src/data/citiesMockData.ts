@@ -1,4 +1,3 @@
-// Mock data for cities and travel packages
 export const mockCitiesData: CityDestination[] = [
    {
     id: 1,
