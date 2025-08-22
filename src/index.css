@@ -127,16 +127,51 @@
 }
 
 @layer base {
-  * {
+  /* Proper CSS Reset */
+  *,
+  *::before,
+  *::after {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* HTML and Body Setup */
+  html {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
   
   body {
     @apply bg-background text-foreground;
+    height: 100%;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+    overflow-x: hidden; /* Prevent horizontal scroll */
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Remove default margins from common elements */
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Prevent button and input from inheriting font */
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
   }
 }
 
@@ -198,6 +233,10 @@
   text-transform: uppercase;
 }
 
+/* Root container fix */
 #root {
-  margin: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  /* Removed margin: auto which could cause issues */
 }
