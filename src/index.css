@@ -4,6 +4,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root[data-theme="light"] {
+  background-color: white;
+  color: black;
+}
+
+:root[data-theme="dark"] {
+  background-color: black;
+  color: white;
+}
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
