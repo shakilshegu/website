@@ -4,8 +4,13 @@ import Layout from "./Layout/Layout";
 import LandingPage from "./pages/LandingPage";
 import CitiesPage from "./pages/CitiesPage";
 import NotFoundPage from "./components/Notfound";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+  document.documentElement.classList.add('light'); 
+}, []);
+
   return (
    <Routes>
       <Route element={<Layout />}>
