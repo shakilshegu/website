@@ -2,19 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
-
-:root[data-theme="light"] {
-  background-color: white;
-  color: black;
-}
-
-:root[data-theme="dark"] {
-  background-color: black;
-  color: white;
-}
-
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -108,34 +95,7 @@
   --pink-800: #9d174d;
 }
 
-.dark {
-  --background: #1f2937;
-  --foreground: #f9fafb;
-  --card: #374151;
-  --card-foreground: #f9fafb;
-  --popover: #374151;
-  --popover-foreground: #f9fafb;
-  --primary: #f9fafb;
-  --primary-foreground: #1f2937;
-  --secondary: #4b5563;
-  --secondary-foreground: #f9fafb;
-  --muted: #4b5563;
-  --muted-foreground: #9ca3af;
-  --accent: #4b5563;
-  --accent-foreground: #f9fafb;
-  --destructive: #ef4444;
-  --border: #4b5563;
-  --input: #4b5563;
-  --ring: #9ca3af;
-  --sidebar: #374151;
-  --sidebar-foreground: #f9fafb;
-  --sidebar-primary: #3b82f6;
-  --sidebar-primary-foreground: #f9fafb;
-  --sidebar-accent: #4b5563;
-  --sidebar-accent-foreground: #f9fafb;
-  --sidebar-border: #4b5563;
-  --sidebar-ring: #9ca3af;
-}
+/* Removed .dark class entirely */
 
 @layer base {
   /* Proper CSS Reset */
